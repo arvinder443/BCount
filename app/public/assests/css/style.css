@@ -1,0 +1,104 @@
+.navbar {
+    background-color: #333;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: right;
+}
+
+.navbar-item {
+    margin-right: 20px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-link:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.navbar-link:active {
+    background-color: #777;
+}
+
+
+/* register css */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-card {
+    width: 400px;
+    height: auto;
+    padding:50px 90px ;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+}
+
+.register-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.register-form-group {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.register-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.register-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.register-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+    background-color: #ff4444;
+}
+
+.login-text {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-link {
+    font-weight: bold;
+    color: red;
+}
