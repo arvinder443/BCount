@@ -1,6 +1,7 @@
 
 import axios from "axios";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import { ToastContainer } from "react-toastify";
@@ -9,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css"
 export default function LOgin() {
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
+    const navigate = useNavigate();
 
     const changeEmail = (e) => {
         setEmail(e.target.value)
@@ -29,6 +31,10 @@ export default function LOgin() {
                 toast.success("Login suucesfully!")
                 sessionStorage.setItem("Token",res.data.token)
                 console.log("Token",res.data.token);
+                setTimeout(()=>{
+                    navigate("/main")
+                    
+                },2000)
             }
             else{
                 toast.error("Error in login")
